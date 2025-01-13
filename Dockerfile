@@ -18,7 +18,11 @@ EXPOSE 5000
 
 # Comando para execução do container
 CMD [ "gunicorn", "--bind", "0.0.0.0:5000", "app:app"]
-
+################################################################################
+# Local
+# docker build -t conversao-distancia -f Dockerfile . 
+# docker container run -d -p 8181:5000 conversao-distancia
+# container rm -f f6928f4f37fe
 ################################################################################
 # Comando no terminal para a criação do container: docker build -t ricardogomes335/conversao-distancia:v1 .
 # Comando no terminal para rodar container: docker container run -d -p 8181:5000 conversao-distancia
