@@ -6,7 +6,7 @@ metadata:
   name: conversao-distancia
 # Cria a quantidade de replicas
 spec:
-  replicas: 1 
+  replicas: 6 
   selector:
     matchLabels:
       app: conversao-distancia
@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: conversao-distancia
-        image: ricardogomes335/conversao-distancia:v1
+        image: ricardogomes335/conversao-distancia:v2
         ports:
         - containerPort: 5000
 ---
