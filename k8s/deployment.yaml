@@ -22,7 +22,7 @@ spec:
         - containerPort: 5000
 ---
 
-# Versão da API Utilizada no Kubernetes
+# Versão nodePort
 apiVersion: v1
 kind: Service
 metadata:
@@ -31,9 +31,7 @@ spec:
   selector:
     app: conversao-distancia
   ports:
-    - port: 80
-      targetPort: 5000
-<<<<<<< Tabnine <<<<<<<
-    type: NodePort
->>>>>>> Tabnine >>>>>>># {"conversationId":"1d862791-a7eb-47d0-9ca9-46e195b8d995","source":"instruct"}
+  - port: 80
+    targetPort: 5000
+  type: NodePort
 
